@@ -2,157 +2,466 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!--CSS Styles -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-
-    <!-- Favicons -->
+    <title>Luisa Alvanez - QA Engineer</title>
+    <!--Bootstrap-->
     <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
-    />
-
-    <!-- Animate CSS CDN -->
-    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
     />
-    <title>Luisa Alvanez | QA Engineer</title>
+    <link rel="stylesheet" href="assets\css\main.css" />
   </head>
-
   <body>
-    <!-- Navbar -->
-    <nav>
-        <h1>Luisa Alvanez</h1>
-        <ul class="navigation">
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <button class="burger-menu" id="burger-menu">
-          <ion-icon class="bars" name="menu-outline"></ion-icon>
-        </button>
-  </nav>
-    <!-- Hero Section -->
-    <section class="hero" id="about">
+    <div id="topnav">
+      <nav class="navbar navbar-expand-lg responsive-nav">
+        <div class="container-fluid">
+          <button
+            class="btn-responsive-nav"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDarkDropdown"
+            aria-controls="navbarNavDarkDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img src="assets\icons\menu\dark\menu_bar.svg" alt="Menu bar" />
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-toggle anchor-responsive-nav active"
+                  href="#home"
+                  id="navbarDarkDropdownMenuLink"
+                  role="button"
+                >
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-toggle anchor-responsive-nav"
+                  href="#about_me"
+                  id="navbarDarkDropdownMenuLink"
+                  role="button"
+                >
+                  About me
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-toggle anchor-responsive-nav"
+                  href="#my_resume"
+                  id="navbarDarkDropdownMenuLink"
+                  role="button"
+                >
+                  My resume
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-toggle anchor-responsive-nav"
+                  href="#my_work"
+                  id="navbarDarkDropdownMenuLink"
+                  role="button"
+                >
+                  My work
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-toggle anchor-responsive-nav"
+                  href="#my_blog"
+                  id="navbarDarkDropdownMenuLink"
+                  role="button"
+                >
+                  My blog
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-toggle anchor-responsive-nav"
+                  href="#contact_me"
+                  id="navbarDarkDropdownMenuLink"
+                  role="button"
+                >
+                  Contact me
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-toggle anchor-responsive-nav"
+                  href="#have_fun"
+                  id="navbarDarkDropdownMenuLink"
+                  role="button"
+                >
+                  Have fun!
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="sidebar">
+      <div class="toggle-sidebar">
+        <img src="assets\icons\menu\dark\menu_bar.svg" alt="Menu bar" />
+      </div>
+      <div class="logo">
         <img
-          src="assets/images/hero-img.svg"
-          alt="luisa-alvanez"
-          loading="lazy"
-          class="hero-img"
+          src="assets\icons\logo\la_logo_dark.svg"
+          alt="Luisa Alvanez's logo"
         />
-        <div class="bio animate__animated animate__shakeX">
-          <h2 class="bio-title">About Me</h2>
-          <p class="bio-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
-            dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
-            inventore tempore minus nemo, iste ullam illo laboriosam maiores
-            repudiandae quos!
-          </p>
-        </div>
-  </section>
-  
-    <!-- More about -->
-
-    <section class="more-about">
-        <h2>More About Me</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-          nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
-          autem deleniti cupiditate molestias quis unde quae totam porro dicta
-          iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
-          nostrum dolor minus, libero delectus praesentium perferendis
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-          consequuntur labore? Ea totam voluptas amet!
-        </p>
-      </section>
-
-    <!-- Skills section -->
-    <section class="skills" id="skills">
-        <h2 class="skill-header">My Top Skills</h2>
-  
-        <div class="skills-wrapper">
-          <div class="first-set animate__animated animate__pulse">
-            <img
-              src="assets/icons/icons8-java-96.png"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
-              src="assets/icons/icons8-selenium-logo-100.png"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
-              src="assets/icons/istqb.png"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#home" class="menu-anchor active">
+              <img
+                id="home_icon"
+                src="assets\icons\menu\dark\home_over.svg"
+                alt="home"
+              />
+              <span>Home</span>
+            </a>
+            <span id="home_span" class="user-select-none">Home</span>
+          </li>
+          <li>
+            <a href="#about_me">
+              <img
+                id="about_me_icon"
+                src="assets\icons\menu\dark\about_me.svg"
+                alt="About me"
+              />
+              <span>About me</span>
+            </a>
+            <span id="about_me_span" class="user-select-none">About me</span>
+          </li>
+          <li>
+            <a href="#my_resume">
+              <img
+                id="my_resume_icon"
+                src="assets\icons\menu\dark\my_resume.svg"
+                alt="My resume"
+              />
+              <span>My resume</span>
+            </a>
+            <span id="my_resume_span" class="user-select-none">My resume</span>
+          </li>
+          <li>
+            <a href="#my_work">
+              <img
+                id="my_work_icon"
+                src="assets\icons\menu\dark\my_work.svg"
+                alt="My work"
+              />
+              <span>My work</span>
+            </a>
+            <span id="my_work_span" class="user-select-none">My work</span>
+          </li>
+          <li>
+            <a href="#my_blog">
+              <img
+                id="my_blog_icon"
+                src="assets\icons\menu\dark\my_blog.svg"
+                alt="My blog"
+              />
+              <span>My blog</span>
+            </a>
+            <span id="my_blog_span" class="user-select-none">My blog</span>
+          </li>
+          <li>
+            <a href="#contact_me">
+              <img
+                id="contact_me_icon"
+                src="assets\icons\menu\dark\contact_me.svg"
+                alt="Contact me"
+              />
+              <span>Contact me</span>
+            </a>
+            <span id="contact_me_span" class="user-select-none"
+              >Contact me</span
+            >
+          </li>
+          <li>
+            <a href="#have_fun">
+              <img
+                id="have_fun_icon"
+                src="assets\icons\menu\dark\have_fun.svg"
+                alt="Have fun"
+              />
+              <span>Have fun!</span>
+            </a>
+            <span id="have_fun_span" class="user-select-none">Have fun!</span>
+          </li>
+        </ul>
+      </nav>
+      <div class="toggle-mode">
+        <div class="outer">
+          <div class="inner">
+            <img class="inner" src="assets\icons\toggle\moon.svg" alt="" />
           </div>
-  
-          <div class="second-set animate__animated animate__pulse">
-            <img
-              src="assets/icons/postman.png"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
-              src="assets/icons/icons8-selenium-logo-100.png"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
-              src="assets/icons/icons8-java-96.png"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
+        </div>
+      </div>
+    </div>
+    <main>
+      <section id="home" class="active">
+        <div class="container">
+          <div class="section-content background-trasparent">
+            <div class="section-info">
+              <div class="row">
+                <div class="col-xl-6 info">
+                  <img
+                    src="assets/images/home/photo_circle_home.svg"
+                    alt="Luisa Alvanez's"
+                    class="img-circle"
+                  />
+                  <h1>
+                    I'm <span class="text-highlight">Luisa Alvanez,</span>
+                  </h1>
+                  <h2>QA engineer</h2>
+                  <p>
+                    Certified, experienced, self-motivated, and detail-oriented
+                    QA Engineer with 4+ years of developing and executing manual
+                    and automated test and analyzing results. On the way to
+                    becoming SDET
+                  </p>
+                  <div class="home-download-btn">
+                    <a
+                      href="assets/files/LuisaAlvanez_QAEngineer_CV_2024.pdf"
+                      class="btn-custom-download"
+                      download
+                      >Download CV</a
+                    >
+                  </div>
+                  <div class="home-socials">
+                    <div class="socials-btn">
+                      <ul>
+                        <li>
+                          <a href="https://www.linkedin.com/in/luisaalvanez/">
+                            <div>
+                              <img
+                                src="/assets/icons/socials/dark/linkedin.svg"
+                                alt="Linkedin icon"
+                              />
+                              <span>Linkedin</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://github.com/luisaalvanez">
+                            <div>
+                              <img
+                                src="/assets/icons/socials/dark/github.svg"
+                                alt="Github icon"
+                              />
+                              <span>Github</span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-6">
+                  <div id="astronaut_img" class="responsive_450_480">
+                    <img
+                      src="/assets/images/home/astronaut_450_480/background.svg"
+                      class="astronaut-background"
+                      alt="Astronaut"
+                    />
+                    <img
+                      src="/assets/images/home/astronaut_450_480/astronaut.svg"
+                      class="floating"
+                      alt=""
+                    />
+                    <img
+                      src="/assets/images/home/astronaut_450_480/message.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div id="astronaut_img" class="responsive_300_480">
+                    <img
+                      src="/assets/images/home/astronaut_300_480/background.svg"
+                      class="astronaut-background"
+                      alt="Astronaut"
+                    />
+                    <img
+                      src="/assets/images/home/astronaut_300_480/astronaut.svg"
+                      class="floating"
+                      alt=""
+                    />
+                    <img
+                      src="/assets/images/home/astronaut_300_480/message.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-    <!-- Projects section -->
-
-    <!-- Contact section -->
-
-    <!-- Social accounts - Fixed to the right -->
-
-    <!-- Scroll to top -->
-
-    <!-- Footer section -->
-    <a target="_blank" href="https://icons8.com">Icons by Icons8</a>
-    <!-- Website scripts -->
-    <script src="assets/js/app.js"></script>
-
-    <!-- Ion icons scripts -->
+      <section id="about_me">
+        <div class="container">
+          <div class="section-content background-blue">
+            <div class="section-info">
+              <div class="row">
+                <div class="col-lg-6">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Cum sociis natoque penatibus et magnis dis. Lectus
+                    mauris ultrices eros in. Eu sem integer vitae justo eget
+                    magna fermentum iaculis. Mi ipsum faucibus vitae aliquet.
+                    Euismod lacinia at quis risus sed vulputate odio. At lectus
+                    urna duis convallis convallis tellus id interdum velit.
+                    Vitae auctor eu augue ut lectus arcu bibendum at varius. A
+                    cras semper auctor neque vitae tempus quam pellentesque.
+                    Eget mi proin sed libero enim sed faucibus turpis.
+                    Scelerisque eleifend donec pretium vulputate sapien nec
+                    sagittis aliquam malesuada. Egestas maecenas pharetra
+                    convallis posuere. Mi bibendum neque egestas congue quisque
+                    egestas diam. Pellentesque diam volutpat commodo sed egestas
+                    egestas fringilla phasellus. Erat pellentesque adipiscing
+                    commodo elit at imperdiet dui accumsan. Risus viverra
+                    adipiscing at in tellus. Mattis enim ut tellus elementum
+                    sagittis vitae et leo. Mattis vulputate enim nulla aliquet
+                    porttitor. Amet consectetur adipiscing elit ut aliquam purus
+                    sit amet. Tristique nulla aliquet enim tortor at auctor
+                    urna. Pretium viverra suspendisse potenti nullam ac tortor
+                    vitae purus. Nunc mi ipsum faucibus vitae aliquet nec
+                    ullamcorper sit. Convallis a cras semper auctor neque. Dolor
+                    sit amet consectetur adipiscing. Egestas sed sed risus
+                    pretium quam vulputate dignissim suspendisse. Diam phasellus
+                    vestibulum lorem sed risus ultricies tristique nulla
+                    aliquet. Nec nam aliquam sem et tortor consequat id porta.
+                    Pulvinar elementum integer enim neque volutpat ac. Sed
+                    ullamcorper morbi tincidunt ornare massa eget egestas purus
+                    viverra. Fames ac turpis egestas maecenas pharetra convallis
+                    posuere. Mauris a diam maecenas sed enim. Ut tristique et
+                    egestas quis ipsum. Facilisis leo vel fringilla est
+                    ullamcorper. Justo donec enim diam vulputate ut. Quam id leo
+                    in vitae turpis massa sed. Sed id semper risus in hendrerit
+                    gravida rutrum. Donec adipiscing tristique risus nec feugiat
+                    in. Tincidunt nunc pulvinar sapien et ligula. Purus sit amet
+                    luctus venenatis lectus magna fringilla urna. Morbi enim
+                    nunc faucibus a pellentesque sit. Libero nunc consequat
+                    interdum varius sit. Turpis cursus in hac habitasse platea
+                    dictumst quisque sagittis. Integer enim neque volutpat ac.
+                    Duis at consectetur lorem donec massa sapien faucibus et.
+                    Sit amet risus nullam eget felis eget nunc lobortis mattis.
+                    Placerat duis ultricies lacus sed turpis tincidunt. Id donec
+                    ultrices tincidunt arcu non. Felis eget nunc lobortis mattis
+                    aliquam faucibus. Et sollicitudin ac orci phasellus egestas
+                    tellus. Porta nibh venenatis cras sed felis eget. Ut
+                    faucibus pulvinar elementum integer enim neque. Elit
+                    ullamcorper dignissim cras tincidunt lobortis feugiat. Ac
+                    turpis egestas maecenas pharetra. In nibh mauris cursus
+                    mattis molestie a iaculis. Justo donec enim diam vulputate.
+                    Amet luctus venenatis lectus magna fringilla urna porttitor
+                    rhoncus dolor. Venenatis cras sed felis eget. Sit amet
+                    mattis vulputate enim. Mattis enim ut tellus elementum
+                    sagittis vitae et leo duis. Leo integer malesuada nunc vel
+                    risus commodo viverra maecenas accumsan. Convallis a cras
+                    semper auctor neque. Sed euismod nisi porta lorem mollis
+                    aliquam ut. Nec feugiat in fermentum posuere urna nec
+                    tincidunt praesent semper. Netus et malesuada fames ac
+                    turpis egestas integer. Et odio pellentesque diam volutpat
+                    commodo sed egestas egestas. Dictum fusce ut placerat orci
+                    nulla pellentesque. Vulputate dignissim suspendisse in est
+                    ante. Risus quis varius quam quisque id diam. Egestas diam
+                    in arcu cursus euismod quis viverra nibh. Neque volutpat ac
+                    tincidunt vitae semper quis. Gravida quis blandit turpis
+                    cursus in hac habitasse. Egestas maecenas pharetra convallis
+                    posuere morbi. Sit amet risus nullam eget felis. Pulvinar
+                    etiam non quam lacus suspendisse faucibus interdum posuere
+                    lorem. Sit amet aliquam id diam maecenas. Nunc consequat
+                    interdum varius sit amet mattis vulputate.
+                  </p>
+                </div>
+                <div class="col-lg-6">
+                  <p>
+                    Certified, experienced, self-motivated, and detail-oriented
+                    QA Engineer with 4+ years of developing and executing manual
+                    and automated test and analyzing results. On the way to
+                    becoming SDET
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="my_resume">
+        <div class="container">
+          <div class="section-content background-blue">
+            <div class="section-info">
+              <div class="row">
+                <div class="col-lg-6"></div>
+                <div class="col-lg-6"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="my_work">
+        <div class="container">
+          <div class="section-content background-blue">
+            <div class="section-info">
+              <div class="row">
+                <div class="col-lg-6"></div>
+                <div class="col-lg-6"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="my_blog">
+        <div class="container">
+          <div class="section-content background-blue">
+            <div class="section-info">
+              <div class="row">
+                <div class="col-lg-6"></div>
+                <div class="col-lg-6"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact_me">
+        <div class="container">
+          <div class="section-content background-blue">
+            <div class="section-info">
+              <div class="row">
+                <div class="col-lg-6"></div>
+                <div class="col-lg-6"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="have_fun">
+        <div class="container">
+          <div class="section-content background-blue">
+            <div class="section-info">
+              <div class="row">
+                <div class="col-lg-6"></div>
+                <div class="col-lg-6"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Bootstrap-->
     <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
     ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    <script src="assets\js\script.js"></script>
   </body>
 </html>
-
-

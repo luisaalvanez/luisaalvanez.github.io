@@ -1,0 +1,101 @@
+.btn-custom-download {
+  display: inline-block;
+  position: relative;
+  padding: 10px 52px;
+  background: $dark_bg;
+  font-size: 18px;
+  width: 220px;
+  color: $secondary_blue;
+  border: 2px solid $secondary_blue;
+  border-radius: 43px;
+  z-index: 1;
+  -webkit-border-radius: 43px;
+  -moz-border-radius: 43px;
+  -ms-border-radius: 43px;
+  -o-border-radius: 43px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    background: $primary_yellow;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    -webkit-transform: translate(-50%, -50%) scale(0);
+    -moz-transform: translate(-50%, -50%) scale(0);
+    -ms-transform: translate(-50%, -50%) scale(0);
+    -o-transform: translate(-50%, -50%) scale(0);
+    z-index: -1;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+  }
+
+  &:hover,
+  &:focus {
+    color: $dark_bg;
+    font-weight: 700;
+    border: 2px solid $dark_bg;
+    &::before {
+      transform: translate(-50%, -50%) scale(3);
+      -webkit-transform: translate(-50%, -50%) scale(3);
+      -moz-transform: translate(-50%, -50%) scale(3);
+      -ms-transform: translate(-50%, -50%) scale(3);
+      -o-transform: translate(-50%, -50%) scale(3);
+    }
+  }
+}
+
+.socials-btn {
+  ul {
+    display: flex;
+    li {
+      margin-right: 30px;
+
+      a {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        border: 2px solid $primary_yellow;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        padding: 8px 0px 8px 0px;
+        width: 130px;
+        div {
+          display: flex;
+          align-items: center;
+          justify-items: center;
+          img {
+            height: 20px;
+            width: 20px;
+            margin-right: 10px;
+          }
+
+          span {
+            line-height: 0;
+            font-size: 18px;
+            color: $primary_yellow;
+          }
+        }
+      }
+    }
+  }
+}
