@@ -100,7 +100,7 @@
     #topnav {
       display: flex;
       position: fixed;
-      z-index: 1;
+      z-index: 2;
 
       nav.responsive-nav {
         background: darken($primary_purple, 53%);
