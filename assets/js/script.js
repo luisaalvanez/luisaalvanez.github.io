@@ -51,7 +51,7 @@ function iconNotSelectedTab(event) {
     document.querySelector('#sidebar span[id*="' + anchor_href + '"]').style.opacity = '0';
     document.querySelector('#sidebar span[id*="' + anchor_href + '"]').style.left = '25px';
     if (!event.target.classList.contains('active')) {
-        document.querySelector('#sidebarr img[id*="' + anchor_href + '"]').setAttribute('src', "assets\\icons\\menu\\dark\\" + anchor_href + ".svg");
+        document.querySelector('#sidebar img[id*="' + anchor_href + '"]').setAttribute('src', "assets\\icons\\menu\\dark\\" + anchor_href + ".svg");
     }
 }
 
