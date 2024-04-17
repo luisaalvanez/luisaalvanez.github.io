@@ -18,6 +18,51 @@ body {
   }
 }
 
+.meteor-animation {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: -2;
+
+  @for $i from 1 through 8 {
+    .meteor:nth-child(#{$i}) {
+      position: absolute;
+      background-image: url("../icons/meteor/meteor.png");
+      background-repeat: no-repeat;
+      width: 60px;
+      height: 50px;
+      opacity: 0;
+      left: #{random(100) + "vw"};
+      top: #{random(100) + "vh"};
+      animation: meteor #{random(5000) + 3000+"ms"} linear infinite;
+      -webkit-animation: meteor #{random(5000) + 3000+"ms"} linear infinite;
+      animation-delay: #{random(5000) + "ms"};
+    }
+  }
+}
+
+@keyframes meteor {
+  0% {
+    opacity: 1;
+    transform: translate(300px, -300px);
+    -webkit-transform: translate(300px, -300px);
+    -moz-transform: translate(300px, -300px);
+    -ms-transform: translate(300px, -300px);
+    -o-transform: translate(300px, -300px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-300px, 300px);
+    -webkit-transform: translate(-300px, 300px);
+    -moz-transform: translate(-300px, 300px);
+    -ms-transform: translate(-300px, 300px);
+    -o-transform: translate(-300px, 300px);
+  }
+}
 main {
   padding-left: 90px;
 

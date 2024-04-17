@@ -19,6 +19,18 @@ function pageLoad() {
 
     menu_toggle.addEventListener("click", menuToggleClick)
 
+    var typed = new Typed('.type-animation h2', {
+        strings: ['QA automation engineer', 'QA manual engineer'],
+        typeSpeed: 60,
+        loop: true
+    });
+
+    for (let i = 1; i <= 8; i++) {
+        let meteor = document.createElement('span');
+        meteor.classList.add("meteor");
+        document.querySelector('body .meteor-animation').append(meteor);
+    }
+
 }
 
 function iconSelected(event) {
@@ -82,6 +94,8 @@ function menuClick(event) {
 function menuToggleClick(event) {
     document.querySelector('#sidebar').classList.toggle("open");
 }
+
+
 
 
 
