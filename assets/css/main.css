@@ -57,6 +57,12 @@ main > section {
   padding-left: 110px;
   display: none;
 }
+main > section div.under-construction {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
 main > section.active {
   display: flex;
   align-items: center;

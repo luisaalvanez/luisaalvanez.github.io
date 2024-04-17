@@ -26,6 +26,13 @@ main {
     padding-left: 110px;
     display: none;
 
+    div.under-construction {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+    }
+
     &.active {
       display: flex;
       align-items: center;
