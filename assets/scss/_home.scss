@@ -11,8 +11,15 @@
     h1 {
       margin-bottom: 4px;
     }
-    h2 {
+    .type-animation {
+      display: flex;
+      align-items: center;
+      font-size: 28px;
       margin-bottom: 30px;
+
+      h2 {
+        margin: 0;
+      }
     }
 
     p {
@@ -35,6 +42,7 @@
   #astronaut_img {
     justify-content: center;
     position: relative;
+    max-width: 100%;
     min-height: 480px;
 
     &.responsive_300_480 {
@@ -59,6 +67,7 @@
 
       &.floating {
         animation: float 6s ease-in-out infinite;
+        -webkit-animation: float 6s ease-in-out infinite;
       }
     }
   }
