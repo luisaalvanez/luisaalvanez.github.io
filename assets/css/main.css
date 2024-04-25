@@ -37,16 +37,53 @@ body p {
 }
 
 body {
-  background: linear-gradient(to top, rgba(12, 23, 46, 0.7), rgba(12, 23, 46, 0.7)), url("/assets/images/general/home_background_img.jpg");
+  background: url("/assets/images/general/home_background_img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  min-height: 100vh;
 }
-body #topnav {
+body #responsive-sidebar {
   display: none;
 }
 body #sidebar {
   display: flex;
+}
+
+main {
+  padding-left: 90px;
+}
+main > section {
+  min-height: 100vh;
+  padding-left: 110px;
+  display: none;
+}
+main > section div.under-construction {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+main > section.active {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+#background-gradient {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: absolute;
+  min-width: 100vw;
+  min-height: 100vh;
+  top: 0;
+  right: 0;
+}
+#background-gradient.background-home {
+  background: rgba(12, 23, 46, 0.7);
+}
+#background-gradient.background-section {
+  background: linear-gradient(to bottom, rgba(12, 23, 46, 0.5) 0%, rgb(12, 23, 46) 20%);
 }
 
 .meteor-animation {
@@ -65,11 +102,11 @@ body #sidebar {
   width: 60px;
   height: 50px;
   opacity: 0;
-  left: 94vw;
-  top: 7vh;
-  animation: meteor 7357ms linear infinite;
-  -webkit-animation: meteor 7186ms linear infinite;
-  animation-delay: 4789ms;
+  left: 13vw;
+  top: 96vh;
+  animation: meteor 7452ms linear infinite;
+  -webkit-animation: meteor 3940ms linear infinite;
+  animation-delay: 2843ms;
 }
 .meteor-animation .meteor:nth-child(2) {
   position: absolute;
@@ -78,11 +115,11 @@ body #sidebar {
   width: 60px;
   height: 50px;
   opacity: 0;
-  left: 20vw;
-  top: 26vh;
-  animation: meteor 4435ms linear infinite;
-  -webkit-animation: meteor 5409ms linear infinite;
-  animation-delay: 781ms;
+  left: 9vw;
+  top: 49vh;
+  animation: meteor 5684ms linear infinite;
+  -webkit-animation: meteor 3242ms linear infinite;
+  animation-delay: 3681ms;
 }
 .meteor-animation .meteor:nth-child(3) {
   position: absolute;
@@ -91,11 +128,11 @@ body #sidebar {
   width: 60px;
   height: 50px;
   opacity: 0;
-  left: 39vw;
-  top: 24vh;
-  animation: meteor 4904ms linear infinite;
-  -webkit-animation: meteor 4405ms linear infinite;
-  animation-delay: 2581ms;
+  left: 40vw;
+  top: 13vh;
+  animation: meteor 5837ms linear infinite;
+  -webkit-animation: meteor 4724ms linear infinite;
+  animation-delay: 2883ms;
 }
 .meteor-animation .meteor:nth-child(4) {
   position: absolute;
@@ -104,11 +141,11 @@ body #sidebar {
   width: 60px;
   height: 50px;
   opacity: 0;
-  left: 3vw;
-  top: 57vh;
-  animation: meteor 3286ms linear infinite;
-  -webkit-animation: meteor 6227ms linear infinite;
-  animation-delay: 3592ms;
+  left: 21vw;
+  top: 59vh;
+  animation: meteor 7626ms linear infinite;
+  -webkit-animation: meteor 6720ms linear infinite;
+  animation-delay: 537ms;
 }
 .meteor-animation .meteor:nth-child(5) {
   position: absolute;
@@ -117,11 +154,11 @@ body #sidebar {
   width: 60px;
   height: 50px;
   opacity: 0;
-  left: 87vw;
-  top: 38vh;
-  animation: meteor 5953ms linear infinite;
-  -webkit-animation: meteor 4431ms linear infinite;
-  animation-delay: 4691ms;
+  left: 73vw;
+  top: 56vh;
+  animation: meteor 6298ms linear infinite;
+  -webkit-animation: meteor 3362ms linear infinite;
+  animation-delay: 1249ms;
 }
 .meteor-animation .meteor:nth-child(6) {
   position: absolute;
@@ -130,11 +167,11 @@ body #sidebar {
   width: 60px;
   height: 50px;
   opacity: 0;
-  left: 50vw;
-  top: 65vh;
-  animation: meteor 6329ms linear infinite;
-  -webkit-animation: meteor 7037ms linear infinite;
-  animation-delay: 986ms;
+  left: 62vw;
+  top: 92vh;
+  animation: meteor 7144ms linear infinite;
+  -webkit-animation: meteor 6589ms linear infinite;
+  animation-delay: 2427ms;
 }
 .meteor-animation .meteor:nth-child(7) {
   position: absolute;
@@ -143,11 +180,11 @@ body #sidebar {
   width: 60px;
   height: 50px;
   opacity: 0;
-  left: 23vw;
-  top: 13vh;
-  animation: meteor 7215ms linear infinite;
-  -webkit-animation: meteor 3300ms linear infinite;
-  animation-delay: 2787ms;
+  left: 91vw;
+  top: 63vh;
+  animation: meteor 7016ms linear infinite;
+  -webkit-animation: meteor 4749ms linear infinite;
+  animation-delay: 412ms;
 }
 .meteor-animation .meteor:nth-child(8) {
   position: absolute;
@@ -156,13 +193,12 @@ body #sidebar {
   width: 60px;
   height: 50px;
   opacity: 0;
-  left: 61vw;
-  top: 13vh;
-  animation: meteor 5052ms linear infinite;
-  -webkit-animation: meteor 7051ms linear infinite;
-  animation-delay: 4494ms;
+  left: 81vw;
+  top: 92vh;
+  animation: meteor 7376ms linear infinite;
+  -webkit-animation: meteor 5958ms linear infinite;
+  animation-delay: 1150ms;
 }
-
 @keyframes meteor {
   0% {
     opacity: 0.7;
@@ -181,53 +217,9 @@ body #sidebar {
     -o-transform: translate(-300px, 300px);
   }
 }
-main {
-  padding-left: 90px;
-}
-main > section {
-  min-height: 100vh;
-  padding-left: 110px;
-  display: none;
-}
-main > section div.under-construction {
-  min-height: 80vh;
-  max-width: 100%;
-  display: flex;
-  align-items: center;
-  justify-items: center;
-}
-main > section.active {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-}
-main > section .section-content {
-  min-height: 80vh;
-  margin: 5vh 0px 5vh 0px;
-  padding: 5vh;
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
-}
-main > section .section-content.background-transparent {
-  background: #0c172e;
-}
-main > section .section-content.background-blue {
-  background: #0c172e;
-  box-shadow: 2px 2px 2px 2px rgba(128, 221, 242, 0.5);
-}
-
-div.section-info {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  min-height: 70vh;
-  width: 100%;
-}
 
 .btn-custom-download {
+  behavior: clickable;
   display: inline-block;
   position: relative;
   padding: 10px 52px;
@@ -274,11 +266,11 @@ div.section-info {
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
 }
-.btn-custom-download:hover, .btn-custom-download:focus {
+.btn-custom-download:hover {
   color: #0c172e;
   border: 2px solid #0c172e;
 }
-.btn-custom-download:hover::before, .btn-custom-download:focus::before {
+.btn-custom-download:hover::before {
   transform: translate(-50%, -50%) scale(3);
   -webkit-transform: translate(-50%, -50%) scale(3);
   -moz-transform: translate(-50%, -50%) scale(3);
@@ -320,7 +312,7 @@ div.section-info {
   font-size: 18px;
   color: #ffb703;
 }
-.socials-btn ul li a:hover, .socials-btn ul li a:focus {
+.socials-btn ul li a:hover {
   border: 2px solid #80ddf2;
   transition: all 0.3s;
   -webkit-transition: all 0.3s;
@@ -328,13 +320,13 @@ div.section-info {
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
 }
-.socials-btn ul li a:hover span, .socials-btn ul li a:focus span {
+.socials-btn ul li a:hover span {
   color: #80ddf2;
 }
-.socials-btn ul li a:hover img.linkedin-btn, .socials-btn ul li a:focus img.linkedin-btn {
+.socials-btn ul li a:hover img.linkedin-btn {
   content: url("/assets/icons/socials/dark/linkedin_over.svg");
 }
-.socials-btn ul li a:hover img.github-btn, .socials-btn ul li a:focus img.github-btn {
+.socials-btn ul li a:hover img.github-btn {
   content: url("/assets/icons/socials/dark/github_over.svg");
 }
 
@@ -347,6 +339,7 @@ div.section-info {
   padding-bottom: 15px;
   flex-direction: column;
   transition: background-color 1s;
+  z-index: 10;
 }
 #sidebar .toggle-sidebar {
   display: none;
@@ -504,22 +497,14 @@ div.section-info {
 #home .home-socials {
   display: flex;
   justify-content: left;
-  margin-bottom: 50px;
 }
 #home #astronaut_img {
+  display: flex;
   justify-content: center;
+  align-content: center;
   position: relative;
   max-width: 100%;
   min-height: 480px;
-}
-#home #astronaut_img.responsive_300_480 {
-  display: none;
-}
-#home #astronaut_img.responsive_450_480 {
-  display: flex;
-}
-#home #astronaut_img .astronaut-background {
-  box-shadow: 2px 2px 2px 2px rgba(128, 221, 242, 0.5);
 }
 #home #astronaut_img img {
   position: absolute;
@@ -553,27 +538,22 @@ div.section-info {
 }
 
 #my_resume {
-  height: 100vh;
   color: #ffb703;
 }
 
 #my_work {
-  height: 100vh;
   color: #ffb703;
 }
 
 #my_blog {
-  height: 100vh;
   color: #ffb703;
 }
 
 #contact_me {
-  height: 100vh;
   color: #ffb703;
 }
 
 #have_fun {
-  height: 100vh;
   color: #ffb703;
 }
 
@@ -629,52 +609,39 @@ div.section-info {
     display: none;
   }
   main {
-    padding-left: 0;
+    padding-left: 33px;
+    padding-top: 80px;
   }
   main > section {
     padding-left: 0;
   }
-  div.section-info::-webkit-scrollbar {
-    background-color: transparent;
-  }
-  div.section-info::-webkit-scrollbar-thumb {
-    background-color: transparent;
-  }
 }
-@media (max-width: 768px) {
-  #home #astronaut_img.responsive_300_480 {
-    display: flex;
-  }
-  #home #astronaut_img.responsive_450_480 {
-    display: none;
-  }
-}
-@media (max-height: 450px) {
-  body #topnav {
+@media (max-height: 500px) {
+  body #responsive-sidebar {
     display: flex;
     position: fixed;
-    z-index: 2;
+    z-index: 10;
   }
-  body #topnav nav.responsive-nav {
+  body #responsive-sidebar nav.responsive-nav {
     background: #14061a;
   }
-  body #topnav nav.responsive-nav button.btn-responsive-nav {
+  body #responsive-sidebar nav.responsive-nav button.btn-responsive-nav {
     background: #14061a;
     border: none;
   }
-  body #topnav nav.responsive-nav button.btn-responsive-nav img {
+  body #responsive-sidebar nav.responsive-nav button.btn-responsive-nav img {
     width: 40px;
     height: 40px;
   }
-  body #topnav li {
+  body #responsive-sidebar li {
     display: flex;
     justify-items: center;
   }
-  body #topnav li a.anchor-responsive-nav {
+  body #responsive-sidebar li a.anchor-responsive-nav {
     padding: 8px;
     color: #ffb703;
   }
-  body #topnav li a.anchor-responsive-nav.active {
+  body #responsive-sidebar li a.anchor-responsive-nav.active {
     border: 2px solid #80ddf2;
     border-radius: 37px;
     -webkit-border-radius: 37px;

@@ -20,7 +20,7 @@ function pageLoad() {
     menu_toggle.addEventListener("click", menuToggleClick)
 
     var typed = new Typed('.type-animation h2', {
-        strings: ['QA Engineer', 'Problem solver', 'Team player', 'Creative', 'Critical thinker', 'Self-taught'],
+        strings: ['QA Engineer', 'Driven by passion', 'Self-taught', 'Creative', 'Team player', 'Problem solver'],
         typeSpeed: 50,
         loop: true
     });
@@ -78,13 +78,23 @@ function menuClick(event) {
         element_id = event.target.parentNode.getAttribute('href').replace('#', '');
     }
 
+    if (element_id == "home") {
+        document.querySelector('#background-gradient').classList.remove('background-section')
+        document.querySelector('#background-gradient').classList.add('background-home')
+
+    } else {
+        document.querySelector('#background-gradient').classList.remove('background-home')
+        document.querySelector('#background-gradient').classList.add('background-section')
+
+    }
+
     document.querySelector('#sidebar li a.active').classList.remove("active");
-    document.querySelector('#topnav li a.active').classList.remove("active");
+    document.querySelector('#responsive-sidebar li a.active').classList.remove("active");
     document.querySelector('#sidebar img[id*="' + anchor_active_href + '"]').setAttribute('src', "assets\\icons\\menu\\dark\\" + anchor_active_href + ".svg");
     document.querySelector('main > section.active').classList.remove("active");
 
     document.querySelector('#sidebar a[href*="' + element_id + '"]').classList.add("active");
-    document.querySelector('#topnav a[href*="' + element_id + '"]').classList.add("active");
+    document.querySelector('#responsive-sidebar a[href*="' + element_id + '"]').classList.add("active");
     document.querySelector('#sidebar img[id*="' + element_id + '"]').setAttribute('src', "assets\\icons\\menu\\dark\\" + element_id + "_over.svg");
     document.querySelector('main > section#' + element_id).classList.add("active");
 
