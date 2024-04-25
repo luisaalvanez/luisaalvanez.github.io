@@ -70,10 +70,6 @@ main > section.active {
 }
 
 #background-gradient {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: absolute;
   min-width: 100vw;
   min-height: 100vh;
   top: 0;
@@ -102,11 +98,11 @@ main > section.active {
   width: 60px;
   height: 50px;
   opacity: 0;
-  left: 3vw;
-  top: 62vh;
-  animation: meteor 3261ms linear infinite;
-  -webkit-animation: meteor 6206ms linear infinite;
-  animation-delay: 916ms;
+  left: 77vw;
+  top: 42vh;
+  animation: meteor 6507ms linear infinite;
+  -webkit-animation: meteor 5465ms linear infinite;
+  animation-delay: 4378ms;
 }
 .meteor-animation .meteor:nth-child(2) {
   position: absolute;
@@ -115,11 +111,11 @@ main > section.active {
   width: 60px;
   height: 50px;
   opacity: 0;
-  left: 82vw;
-  top: 13vh;
-  animation: meteor 4630ms linear infinite;
-  -webkit-animation: meteor 3493ms linear infinite;
-  animation-delay: 1761ms;
+  left: 50vw;
+  top: 39vh;
+  animation: meteor 5283ms linear infinite;
+  -webkit-animation: meteor 4487ms linear infinite;
+  animation-delay: 4826ms;
 }
 .meteor-animation .meteor:nth-child(3) {
   position: absolute;
@@ -128,11 +124,11 @@ main > section.active {
   width: 60px;
   height: 50px;
   opacity: 0;
-  left: 44vw;
-  top: 85vh;
-  animation: meteor 7482ms linear infinite;
-  -webkit-animation: meteor 5337ms linear infinite;
-  animation-delay: 270ms;
+  left: 23vw;
+  top: 45vh;
+  animation: meteor 3958ms linear infinite;
+  -webkit-animation: meteor 6429ms linear infinite;
+  animation-delay: 4513ms;
 }
 .meteor-animation .meteor:nth-child(4) {
   position: absolute;
@@ -141,11 +137,11 @@ main > section.active {
   width: 60px;
   height: 50px;
   opacity: 0;
-  left: 1vw;
-  top: 100vh;
-  animation: meteor 3529ms linear infinite;
-  -webkit-animation: meteor 5515ms linear infinite;
-  animation-delay: 1541ms;
+  left: 80vw;
+  top: 49vh;
+  animation: meteor 7664ms linear infinite;
+  -webkit-animation: meteor 7887ms linear infinite;
+  animation-delay: 1039ms;
 }
 .meteor-animation .meteor:nth-child(5) {
   position: absolute;
@@ -154,11 +150,11 @@ main > section.active {
   width: 60px;
   height: 50px;
   opacity: 0;
-  left: 6vw;
-  top: 22vh;
-  animation: meteor 7601ms linear infinite;
-  -webkit-animation: meteor 5559ms linear infinite;
-  animation-delay: 4529ms;
+  left: 39vw;
+  top: 36vh;
+  animation: meteor 6572ms linear infinite;
+  -webkit-animation: meteor 7537ms linear infinite;
+  animation-delay: 3157ms;
 }
 .meteor-animation .meteor:nth-child(6) {
   position: absolute;
@@ -167,11 +163,11 @@ main > section.active {
   width: 60px;
   height: 50px;
   opacity: 0;
-  left: 67vw;
-  top: 75vh;
-  animation: meteor 5914ms linear infinite;
-  -webkit-animation: meteor 3477ms linear infinite;
-  animation-delay: 1574ms;
+  left: 26vw;
+  top: 69vh;
+  animation: meteor 3615ms linear infinite;
+  -webkit-animation: meteor 5215ms linear infinite;
+  animation-delay: 165ms;
 }
 .meteor-animation .meteor:nth-child(7) {
   position: absolute;
@@ -180,11 +176,11 @@ main > section.active {
   width: 60px;
   height: 50px;
   opacity: 0;
-  left: 17vw;
-  top: 15vh;
-  animation: meteor 5096ms linear infinite;
-  -webkit-animation: meteor 7286ms linear infinite;
-  animation-delay: 2907ms;
+  left: 94vw;
+  top: 74vh;
+  animation: meteor 4436ms linear infinite;
+  -webkit-animation: meteor 4362ms linear infinite;
+  animation-delay: 2129ms;
 }
 .meteor-animation .meteor:nth-child(8) {
   position: absolute;
@@ -193,11 +189,11 @@ main > section.active {
   width: 60px;
   height: 50px;
   opacity: 0;
-  left: 91vw;
-  top: 38vh;
-  animation: meteor 7543ms linear infinite;
-  -webkit-animation: meteor 7029ms linear infinite;
-  animation-delay: 1072ms;
+  left: 10vw;
+  top: 50vh;
+  animation: meteor 7126ms linear infinite;
+  -webkit-animation: meteor 4412ms linear infinite;
+  animation-delay: 4700ms;
 }
 @keyframes meteor {
   0% {
@@ -373,6 +369,7 @@ main > section.active {
 }
 #sidebar nav ul li {
   position: relative;
+  display: flex;
   margin-bottom: 15px;
 }
 #sidebar nav ul li a img {
