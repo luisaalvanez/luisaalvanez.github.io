@@ -36,26 +36,15 @@
   .home-socials {
     display: flex;
     justify-content: left;
-    margin-bottom: 50px;
   }
 
   #astronaut_img {
+    display: flex;
     justify-content: center;
+    align-content: center;
     position: relative;
     max-width: 100%;
     min-height: 480px;
-
-    &.responsive_300_480 {
-      display: none;
-    }
-
-    &.responsive_450_480 {
-      display: flex;
-    }
-
-    .astronaut-background {
-      box-shadow: 2px 2px 2px 2px rgba(128, 221, 242, 0.5);
-    }
 
     img {
       position: absolute;

@@ -64,43 +64,21 @@
   }
 
   main {
-    padding-left: 0;
+    padding-left: 33px;
+    padding-top: 80px;
 
     > section {
       padding-left: 0;
     }
   }
-
-  div.section-info {
-    &::-webkit-scrollbar {
-      background-color: transparent;
-    }
-    &::-webkit-scrollbar-thumb {
-      background-color: transparent;
-    }
-  }
 }
 
-@media (max-width: 768px) {
-  #home {
-    #astronaut_img {
-      &.responsive_300_480 {
-        display: flex;
-      }
-
-      &.responsive_450_480 {
-        display: none;
-      }
-    }
-  }
-}
-
-@media (max-height: 450px) {
+@media (max-height: 500px) {
   body {
-    #topnav {
+    #responsive-sidebar {
       display: flex;
       position: fixed;
-      z-index: 2;
+      z-index: 10;
 
       nav.responsive-nav {
         background: darken($primary_purple, 53%);

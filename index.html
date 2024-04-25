@@ -15,8 +15,8 @@
   </head>
   <body>
     <div class="meteor-animation"></div>
-    <div id="topnav">
-      <nav class="navbar navbar-expand-lg responsive-nav">
+    <div id="responsive-sidebar">
+      <nav class="navbar responsive-nav">
         <div class="container-fluid">
           <button
             class="btn-responsive-nav"
@@ -207,224 +207,180 @@
         </div>
       </div>
     </div>
-    <main>
-      <section id="home" class="active">
-        <div class="container">
-          <div class="section-content background-trasparent">
-            <div class="section-info">
-              <div class="row">
-                <div class="col-xl-6 info">
+    <div id="background-gradient" class="background-home">
+      <main>
+        <section id="home" class="active">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 info">
+                <img
+                  src="assets/images/home/photo_circle_home.svg"
+                  alt="Luisa Alvanez's"
+                  class="img-circle"
+                />
+                <h1>I'm <span class="text-highlight">Luisa Alvanez,</span></h1>
+                <div class="type-animation">
+                  <h2></h2>
+                </div>
+                <p>
+                  Certified, experienced, self-motivated, and detail-oriented QA
+                  Engineer with 4+ years of developing and executing manual and
+                  automated test and analyzing results. On the way to becoming
+                  SDET
+                </p>
+                <div class="home-download-btn">
+                  <a
+                    href="assets/files/LuisaAlvanez_QAEngineer_CV_2024.pdf"
+                    class="btn-custom-download"
+                    download
+                    >Download CV</a
+                  >
+                </div>
+                <div class="home-socials">
+                  <div class="socials-btn">
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.linkedin.com/in/luisaalvanez/"
+                          target="_blank"
+                        >
+                          <div>
+                            <img
+                              src="/assets/icons/socials/dark/linkedin.svg"
+                              alt="Linkedin icon"
+                              class="linkedin-btn"
+                            />
+                            <span>Linkedin</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://github.com/luisaalvanez"
+                          target="_blank"
+                        >
+                          <div>
+                            <img
+                              src="/assets/icons/socials/dark/github.svg"
+                              alt="Github icon"
+                              class="github-btn"
+                            />
+                            <span>Github</span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 image">
+                <div id="astronaut_img">
                   <img
-                    src="assets/images/home/photo_circle_home.svg"
-                    alt="Luisa Alvanez's"
-                    class="img-circle"
+                    src="/assets/images/home/astronaut_300_480/astronaut.svg"
+                    class="floating"
+                    alt=""
                   />
-                  <h1>
-                    I'm <span class="text-highlight">Luisa Alvanez,</span>
-                  </h1>
-                  <div class="type-animation">
-                    <h2></h2>
-                  </div>
-
-                  <p>
-                    Certified, experienced, self-motivated, and detail-oriented
-                    QA Engineer with 4+ years of developing and executing manual
-                    and automated test and analyzing results. On the way to
-                    becoming SDET
-                  </p>
-                  <div class="home-download-btn">
-                    <a
-                      href="assets/files/LuisaAlvanez_QAEngineer_CV_2024.pdf"
-                      class="btn-custom-download"
-                      download
-                      >Download CV</a
-                    >
-                  </div>
-                  <div class="home-socials">
-                    <div class="socials-btn">
-                      <ul>
-                        <li>
-                          <a
-                            href="https://www.linkedin.com/in/luisaalvanez/"
-                            target="_blank"
-                          >
-                            <div>
-                              <img
-                                src="/assets/icons/socials/dark/linkedin.svg"
-                                alt="Linkedin icon"
-                                class="linkedin-btn"
-                              />
-                              <span>Linkedin</span>
-                            </div>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="https://github.com/luisaalvanez"
-                            target="_blank"
-                          >
-                            <div>
-                              <img
-                                src="/assets/icons/socials/dark/github.svg"
-                                alt="Github icon"
-                                class="github-btn"
-                              />
-                              <span>Github</span>
-                            </div>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6 image">
-                  <div id="astronaut_img" class="responsive_450_480">
-                    <img
-                      src="/assets/images/home/astronaut_450_480/background.jpg"
-                      class="astronaut-background"
-                      alt="Astronaut"
-                    />
-                    <img
-                      src="/assets/images/home/astronaut_450_480/astronaut.svg"
-                      class="floating"
-                      alt=""
-                    />
-                    <img
-                      src="/assets/images/home/astronaut_450_480/message.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div id="astronaut_img" class="responsive_300_480">
-                    <img
-                      src="/assets/images/home/astronaut_300_480/background.jpg"
-                      class="astronaut-background"
-                      alt="Astronaut"
-                    />
-                    <img
-                      src="/assets/images/home/astronaut_300_480/astronaut.svg"
-                      class="floating"
-                      alt=""
-                    />
-                    <img
-                      src="/assets/images/home/astronaut_300_480/message.svg"
-                      alt=""
-                    />
-                  </div>
+                  <img
+                    src="/assets/images/home/astronaut_300_480/message.svg"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section id="about_me">
-        <div class="container">
-          <div class="section-content background-blue">
-            <div class="section-info">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="under-construction">
-                    <img
-                      src="/assets/images/construction/under_construction.png"
-                      alt="Under Construction"
-                    />
-                  </div>
+        </section>
+        <section id="about_me">
+          <div class="container under-construction">
+            <div class="row">
+              <div class="col-lg-6">
+                <div>
+                  <img
+                    src="/assets/images/construction/under_construction.png"
+                    class="img-fluid"
+                    alt="Under Construction"
+                  />
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section id="my_resume">
-        <div class="container">
-          <div class="section-content background-blue">
-            <div class="section-info">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="under-construction">
-                    <img
-                      src="/assets/images/construction/under_construction.png"
-                      alt="Under Construction"
-                    />
-                  </div>
+        </section>
+        <section id="my_resume">
+          <div class="container under-construction">
+            <div class="row">
+              <div class="col-xl-6">
+                <div>
+                  <img
+                    src="/assets/images/construction/under_construction.png"
+                    class="img-fluid"
+                    alt="Under Construction"
+                  />
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section id="my_work">
-        <div class="container">
-          <div class="section-content background-blue">
-            <div class="section-info">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="under-construction">
-                    <img
-                      src="/assets/images/construction/under_construction.png"
-                      alt="Under Construction"
-                    />
-                  </div>
+        </section>
+        <section id="my_work">
+          <div class="container under-construction">
+            <div class="row">
+              <div class="col-xl-6">
+                <div>
+                  <img
+                    src="/assets/images/construction/under_construction.png"
+                    class="img-fluid"
+                    alt="Under Construction"
+                  />
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section id="my_blog">
-        <div class="container">
-          <div class="section-content background-blue">
-            <div class="section-info">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="under-construction">
-                    <img
-                      src="/assets/images/construction/under_construction.png"
-                      alt="Under Construction"
-                    />
-                  </div>
+        </section>
+        <section id="my_blog">
+          <div class="container under-construction">
+            <div class="row">
+              <div class="col-xl-6">
+                <div>
+                  <img
+                    src="/assets/images/construction/under_construction.png"
+                    class="img-fluid"
+                    alt="Under Construction"
+                  />
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section id="contact_me">
-        <div class="container">
-          <div class="section-content background-blue">
-            <div class="section-info">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="under-construction">
-                    <img
-                      src="/assets/images/construction/under_construction.png"
-                      alt="Under Construction"
-                    />
-                  </div>
+        </section>
+        <section id="contact_me">
+          <div class="container under-construction">
+            <div class="row">
+              <div class="col-xl-6">
+                <div>
+                  <img
+                    src="/assets/images/construction/under_construction.png"
+                    class="img-fluid"
+                    alt="Under Construction"
+                  />
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section id="have_fun">
-        <div class="container">
-          <div class="section-content background-blue">
-            <div class="section-info">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="under-construction">
-                    <img
-                      src="/assets/images/construction/under_construction.png"
-                      alt="Under Construction"
-                    />
-                  </div>
+        </section>
+        <section id="have_fun">
+          <div class="container under-construction">
+            <div class="row">
+              <div class="col-xl-6">
+                <div>
+                  <img
+                    src="/assets/images/construction/under_construction.png"
+                    class="img-fluid"
+                    alt="Under Construction"
+                  />
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+    </div>
     <!--Bootstrap-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
