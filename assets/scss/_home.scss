@@ -47,6 +47,8 @@
     min-height: 480px;
 
     img {
+      filter: drop-shadow(5px 2px 5px $secondary_blue);
+      -webkit-filter: drop-shadow(5px 2px 5px $secondary_blue);
       position: absolute;
       border-radius: 5%;
       -webkit-border-radius: 5%;

@@ -98,11 +98,11 @@ main > section.active {
   width: 60px;
   height: 50px;
   opacity: 0;
-  left: 77vw;
-  top: 42vh;
-  animation: meteor 6507ms linear infinite;
-  -webkit-animation: meteor 5465ms linear infinite;
-  animation-delay: 4378ms;
+  left: 27vw;
+  top: 31vh;
+  animation: meteor 7005ms linear infinite;
+  -webkit-animation: meteor 7158ms linear infinite;
+  animation-delay: 3528ms;
 }
 .meteor-animation .meteor:nth-child(2) {
   position: absolute;
@@ -111,11 +111,11 @@ main > section.active {
   width: 60px;
   height: 50px;
   opacity: 0;
-  left: 50vw;
-  top: 39vh;
-  animation: meteor 5283ms linear infinite;
-  -webkit-animation: meteor 4487ms linear infinite;
-  animation-delay: 4826ms;
+  left: 94vw;
+  top: 68vh;
+  animation: meteor 4774ms linear infinite;
+  -webkit-animation: meteor 4199ms linear infinite;
+  animation-delay: 3050ms;
 }
 .meteor-animation .meteor:nth-child(3) {
   position: absolute;
@@ -124,11 +124,11 @@ main > section.active {
   width: 60px;
   height: 50px;
   opacity: 0;
-  left: 23vw;
-  top: 45vh;
-  animation: meteor 3958ms linear infinite;
-  -webkit-animation: meteor 6429ms linear infinite;
-  animation-delay: 4513ms;
+  left: 49vw;
+  top: 43vh;
+  animation: meteor 6383ms linear infinite;
+  -webkit-animation: meteor 7592ms linear infinite;
+  animation-delay: 2747ms;
 }
 .meteor-animation .meteor:nth-child(4) {
   position: absolute;
@@ -137,11 +137,11 @@ main > section.active {
   width: 60px;
   height: 50px;
   opacity: 0;
-  left: 80vw;
-  top: 49vh;
-  animation: meteor 7664ms linear infinite;
-  -webkit-animation: meteor 7887ms linear infinite;
-  animation-delay: 1039ms;
+  left: 4vw;
+  top: 47vh;
+  animation: meteor 5087ms linear infinite;
+  -webkit-animation: meteor 6119ms linear infinite;
+  animation-delay: 1763ms;
 }
 .meteor-animation .meteor:nth-child(5) {
   position: absolute;
@@ -150,11 +150,11 @@ main > section.active {
   width: 60px;
   height: 50px;
   opacity: 0;
-  left: 39vw;
-  top: 36vh;
-  animation: meteor 6572ms linear infinite;
-  -webkit-animation: meteor 7537ms linear infinite;
-  animation-delay: 3157ms;
+  left: 75vw;
+  top: 62vh;
+  animation: meteor 4021ms linear infinite;
+  -webkit-animation: meteor 4417ms linear infinite;
+  animation-delay: 1862ms;
 }
 .meteor-animation .meteor:nth-child(6) {
   position: absolute;
@@ -163,11 +163,11 @@ main > section.active {
   width: 60px;
   height: 50px;
   opacity: 0;
-  left: 26vw;
-  top: 69vh;
-  animation: meteor 3615ms linear infinite;
-  -webkit-animation: meteor 5215ms linear infinite;
-  animation-delay: 165ms;
+  left: 43vw;
+  top: 85vh;
+  animation: meteor 6284ms linear infinite;
+  -webkit-animation: meteor 5091ms linear infinite;
+  animation-delay: 2013ms;
 }
 .meteor-animation .meteor:nth-child(7) {
   position: absolute;
@@ -177,10 +177,10 @@ main > section.active {
   height: 50px;
   opacity: 0;
   left: 94vw;
-  top: 74vh;
-  animation: meteor 4436ms linear infinite;
-  -webkit-animation: meteor 4362ms linear infinite;
-  animation-delay: 2129ms;
+  top: 47vh;
+  animation: meteor 6595ms linear infinite;
+  -webkit-animation: meteor 4096ms linear infinite;
+  animation-delay: 505ms;
 }
 .meteor-animation .meteor:nth-child(8) {
   position: absolute;
@@ -189,11 +189,11 @@ main > section.active {
   width: 60px;
   height: 50px;
   opacity: 0;
-  left: 10vw;
-  top: 50vh;
-  animation: meteor 7126ms linear infinite;
-  -webkit-animation: meteor 4412ms linear infinite;
-  animation-delay: 4700ms;
+  left: 23vw;
+  top: 53vh;
+  animation: meteor 5655ms linear infinite;
+  -webkit-animation: meteor 6983ms linear infinite;
+  animation-delay: 3391ms;
 }
 @keyframes meteor {
   0% {
@@ -504,6 +504,8 @@ main > section.active {
   min-height: 480px;
 }
 #home #astronaut_img img {
+  filter: drop-shadow(5px 2px 5px #80ddf2);
+  -webkit-filter: drop-shadow(5px 2px 5px #80ddf2);
   position: absolute;
   border-radius: 5%;
   -webkit-border-radius: 5%;
