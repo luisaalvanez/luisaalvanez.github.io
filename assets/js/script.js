@@ -20,7 +20,7 @@ function pageLoad() {
     menu_toggle.addEventListener("click", menuToggleClick)
 
     var typed = new Typed('.type-animation h2', {
-        strings: ['QA Engineer', 'Driven by passion', 'Self-taught', 'Creative', 'Team player', 'Problem solver'],
+        strings: ['QA Engineer', 'Driven by passion', 'Continuous learner', 'Creative', 'Team player', 'Problem solver'],
         typeSpeed: 50,
         loop: true
     });
